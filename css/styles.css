@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #DBD6CB;
+    color:#171717;
+    font-family: sans-serif;
+    margin:auto;
+}
+
+nav{
+    width: 100vw;
+    height:5vh;
+    display:flex;
+}
+
+header{
+    width: 100vw;
+    height: 80vh;
+    background-image: url("../css/images/IMG_1671.JPG");
+    background-size: cover;
+    background-position: 50% 70%;
+    text-align: center;
+}
+
+a{
+    color:black;
+    margin: auto;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#CF1F30;
+    border-bottom: 3px solid #CF1F30;
+
+}
+
+h1{
+    color: aliceblue;
+    font-size: 3rem;
+}
+
+h2{
+    color:aliceblue;
+    font-size: 2rem;
+}
+
+
+
+@media (width <= 480px) {
+nav{
+    height: 10vh;
+    flex-direction: column;
+}
+}
