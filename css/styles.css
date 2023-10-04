@@ -9,6 +9,12 @@ body{
     margin:auto;
 }
 
+#center-container {
+    max-width: 1000px;
+    width: 90vw;
+    margin: 0 auto;
+}
+
 nav{
     width: 100vw;
     height:5vh;
@@ -17,7 +23,7 @@ nav{
 
 header{
     width: 100vw;
-    height: 80vh;
+    min-height: 80vh;
     background-image: url("../css/images/IMG_1671.JPG");
     background-size: cover;
     background-position: 50% 70%;
@@ -27,6 +33,7 @@ header{
 a{
     color:black;
     margin: auto;
+    margin-top: 3vh;
     text-decoration: none;
 }
 
@@ -49,6 +56,10 @@ h2{
 
 
 @media (width <= 480px) {
+html{
+    font-size: 12px;
+}
+
 nav{
     height: 10vh;
     flex-direction: column;
