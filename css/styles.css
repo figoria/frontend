@@ -72,7 +72,46 @@ button a{
     text-decoration: none;
 }
 
+.recipes-container {
+    display: flex;
+    gap: 30px;
+}
 
+.recipes-container article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 1vw;
+}
+
+.recipes-container article img {
+    width: 100%;
+    border-radius: 1vw;
+}
+
+.recipes-container article h3 {
+    margin-bottom: 0px;
+}
+
+a.button-default {
+    display: block;
+    padding: 10px 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    border: 3px solid #84a98c;
+    background-color: #84a98c;
+    position: relative;
+}
+
+a.button-default:hover {
+    background-color: #FFFFFF;
+    color: #84a98c;
+}
 
 
 @media (width <= 480px) {
