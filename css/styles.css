@@ -5,7 +5,7 @@
 body{
     background-color: #DBD6CB;
     color:#171717;
-    font-family: monospace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin:auto;
 }
 
@@ -25,7 +25,7 @@ nav{
 header{
     width: 100vw;
     min-height: 80vh;
-    background-image: url("../css/images/IMG_1671.JPG");
+    background-image: url("../css/images/fotoSamen.jpg");
     background-size: cover;
     background-position: 50% 70%;
     text-align: center;
@@ -58,19 +58,34 @@ h2{
 button{
     height: 5vh;
     width: 5vw;
-    background-color: #DBD6CB;
-    color:#171717;
+    background-color: #171717;
+    color:aliceblue;
     border-radius: 10px;
     font-family: monospace;
+    border: 3px solid #171717;
+
+}
+
+button:hover{
+    background-color: #DBD6CB;
+    color:#171717;
 }
 
 .button2{
-
+    color:#171717;
+    background-color: #DBD6CB;
+    border: 3px solid #DBD6CB;
 }
 
-button a{
-    text-decoration: none;
+.button2:hover{
+    color:#DBD6CB;
+    background-color: #171717;
 }
+
+section{
+    text-align: center;
+}
+
 
 .recipes-container {
     display: flex;
@@ -83,12 +98,13 @@ button a{
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    border: 1px solid #000000;
+    border: 3px solid #171717;
     border-radius: 1vw;
 }
 
 .recipes-container article img {
     width: 100%;
+    border: 2px solid #171717;
     border-radius: 1vw;
 }
 
@@ -103,14 +119,14 @@ a.button-default {
     text-decoration: none;
     text-align: center;
     border-radius: 5px;
-    border: 3px solid #84a98c;
-    background-color: #84a98c;
-    position: relative;
+    border: 3px solid #171717;
+    background-color: #171717;
+    position:relative;
 }
 
 a.button-default:hover {
     background-color: #FFFFFF;
-    color: #84a98c;
+    color: #171717;
 }
 
 
