@@ -5,7 +5,7 @@
 body{
     background-color: #DBD6CB;
     color:#171717;
-    font-family: sans-serif;
+    font-family: monospace;
     margin:auto;
 }
 
@@ -19,6 +19,7 @@ nav{
     width: 100vw;
     height:5vh;
     display:flex;
+
 }
 
 header{
@@ -30,14 +31,14 @@ header{
     text-align: center;
 }
 
-a{
+nav a{
     color:black;
     margin: auto;
     margin-top: 3vh;
     text-decoration: none;
 }
 
-a:hover{
+nav a:hover{
     color:#CF1F30;
     border-bottom: 3px solid #CF1F30;
 
@@ -46,12 +47,31 @@ a:hover{
 h1{
     color: aliceblue;
     font-size: 3rem;
+    padding-top: 30vh;
 }
 
 h2{
     color:aliceblue;
     font-size: 2rem;
 }
+
+button{
+    height: 5vh;
+    width: 5vw;
+    background-color: #DBD6CB;
+    color:#171717;
+    border-radius: 10px;
+    font-family: monospace;
+}
+
+.button2{
+
+}
+
+button a{
+    text-decoration: none;
+}
+
 
 
 
