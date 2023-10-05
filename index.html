@@ -17,14 +17,14 @@
             <h2>Sam Bijkerk</h2>
 
             <button onclick="document.location='#overmij'"> over mij</button>
-            <button class= "button2"onclick="document.location='subpaginas/pagina1.html'"> odrachten</button>
+            <button class= "button2"onclick="document.location='subpaginas/pagina1.html'" target="_blank"> odrachten</button>
 
         </header>
         <div id="center-container">
 
         <main>
             <section>
-                <h2 id="overmij">Wie is Sam?</h2>
+                <h2 id="overmij" class="black-h2">Wie is Sam?</h2>
                 <div class="info-container">
 
                     <article>
@@ -71,15 +71,15 @@
                                 samen in een groepje doen, maar er was ook een opdracht die ik alleen moest doen.
                             </p>
                         </div>
-                        <a href="./subpaginas/pagina1.html" class="button-default">opdrachten</a>
+                        <a href="./subpaginas/pagina1.html" target="_blank" class="button-default">opdrachten</a>
                     </article>
 
                 </div>
             </section>
         </div>
             <section class="contact">
-                <form action="./subpaginas/pagina2.html" id="contact">
-                    <h2>Contact</h2>
+                <form action="./subpaginas/pagina2.html" target="_blank" id="contact">
+                    <h2 class="black-h2">Contact</h2>
                     <div class="formfield">
                         <label for="first-name">Voornaam</label>
                         <input type="text" class="name" id="first-name" name="name" placeholder="Voornaam" required>
@@ -93,10 +93,10 @@
                     </div>
                     <div class="formfield">
                         <label for="city">Woonplaats</label>
-                        <input type="text" class="city" id="city" name="city" placeholder="Woonplaats" required>
+                        <input type="text" class="third-row" id="city" name="city" placeholder="Woonplaats" required>
 
                         <label for="date">Geboortedatum</label>
-                        <input type="date" id="date" name="birthday" class="date" required>
+                        <input type="date" id="date" name="birthday" class="third-row" required>
                     </div>
                     <div class="fieldform">
                         <label for="topic">Onderwerp</label>
@@ -130,11 +130,12 @@
             </section>
         </main>
         <footer>
-            <img src="./css/images/instagram.png" alt="logo instagram">
-            <img src="./css/images/linkedin.png" alt="logo linkedin">
-            <img src="./css/images/tiktok.png" alt="logo tiktok">
-            <img src="./css/images/mail.png" alt="logo gmail">
+            <a href="https://www.instagram.com/sambijkerk2004/"><img src="./css/images/instagram.png" alt="logo instagram"></a>
+            <a href="https://www.linkedin.com/in/sam-bijkerk-b2086b271/"><img src="./css/images/linkedin.png" alt="logo linkedin"></a>
+            <a href="https://www.tiktok.com/@figoria"><img src="./css/images/tiktok.png" alt="logo tiktok"></a>
+            <a href="mailto:1056443@hr.nl"><img src="./css/images/mail.png" alt="logo gmail"></a>
 
+            <a href="#contact"><p>contact</p></a>
         </footer>
     </body>
 </html>
