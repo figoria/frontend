@@ -76,15 +76,16 @@
 
                 </div>
             </section>
-            <section>
+        </div>
+            <section class="contact">
                 <form action="./subpaginas/pagina2.html" id="contact">
-                    <h2>Form</h2>
+                    <h2>Contact</h2>
                     <div class="formfield">
                         <label for="first-name">Voornaam</label>
                         <input type="text" class="name" id="first-name" name="name" placeholder="Voornaam" required>
                         
                         <label for="last-name">Achternaam</label>
-                        <input type="text" class="lastname" id="last-name" name="lastname" placeholder="Achternaam">
+                        <input type="text" class="name" id="last-name" name="lastname" placeholder="Achternaam" required>
                     </div>
                     <div class="fieldform">
                         <label for="e-mail">Email</label>
@@ -113,18 +114,27 @@
                     </div>
                     <div class="formselect">
                         <p>Inschrijven voor nieuwsbrief?</p>
+                        <input type="radio" id="yes" name="news" value="yes" class="pick" required>
                         <label for="yes">Ja</label>
-                        <input type="radio" id="yes" name="news" value="yes" required>
+                        <input type="radio" id="no" name="news" value="no" class="pick">
                         <label for="no">Nee</label>
-                        <input type="radio" id="no" name="news" value="no" >
                     </div>
+                    <div class="formselect">
+                        <input type="checkbox" id="condition" name="condition" value="condition" class="pick" required>
+                        <label for="condition">Ik ga akkoord met de algemene voorwaarden* </label>
+                    </div>
+
+                    <button type="submit" class="buttonform">verstuur e-mail</button>
 
                 </form>
             </section>
         </main>
         <footer>
+            <img src="./css/images/instagram.png" alt="logo instagram">
+            <img src="./css/images/linkedin.png" alt="logo linkedin">
+            <img src="./css/images/tiktok.png" alt="logo tiktok">
+            <img src="./css/images/mail.png" alt="logo gmail">
 
         </footer>
-        </div>
     </body>
 </html>

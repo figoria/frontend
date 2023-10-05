@@ -129,10 +129,95 @@ a.button-default:hover {
     color: #171717;
 }
 
-section form{
+.contact {
     background-color: #d1ccc0;
     width: 100vw;
-    
+    min-height: 98vh;
+    text-align: left;
+}
+
+form{
+    width: 40vw;
+    margin:auto; 
+}
+
+form h2{
+    color:#171717;
+    text-align: center;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+input{
+    border: 2px solid #171717;
+    border-radius: 3px;
+    height: 5vh;
+}
+
+.formfield{
+    flex-direction: row;
+    align-self:flex-start;
+}
+
+.name{
+    width: 15vw;
+}
+
+select{
+    height: 5vh;
+    width: 40vw;
+    border: 1px solid #171717; 
+    margin: auto;
+}
+
+.pick{
+    height: 3vh;
+}
+
+.formselect{
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonform{
+    width: 10vw;
+    color: #171717;
+    background-color:#d1ccc0 ;
+    margin-left:14vw;
+    margin-top: 1vh;
+    border: 3px solid #FA2423;
+}
+
+
+.buttonform:hover{
+    background-color:#FA2423 ;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border:3px solid #FA2423;
+}
+
+input:valid {
+    border: 3px solid #95E54D;
+    background-color:#C9FCB6;
+}
+
+footer{
+    display: flex;
+    background-color: #171717;
+    min-height: 30vh;
+    width: 100vw;
+}
+
+footer img{
+    max-width: 2vw;
+    max-height: 4vh;
+    margin: 1vh 1vw;
+    align-self:center;
 }
 
 
