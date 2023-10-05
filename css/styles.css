@@ -87,12 +87,12 @@ section{
 }
 
 
-.recipes-container {
+.info-container {
     display: flex;
     gap: 30px;
 }
 
-.recipes-container article {
+.info-container article {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -102,13 +102,13 @@ section{
     border-radius: 1vw;
 }
 
-.recipes-container article img {
+.info-container article img {
     width: 100%;
     border: 2px solid #171717;
     border-radius: 1vw;
 }
 
-.recipes-container article h3 {
+.info-container article h3 {
     margin-bottom: 0px;
 }
 
@@ -127,6 +127,12 @@ a.button-default {
 a.button-default:hover {
     background-color: #FFFFFF;
     color: #171717;
+}
+
+section form{
+    background-color: #d1ccc0;
+    width: 100vw;
+    
 }
 
 
