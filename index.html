@@ -86,7 +86,7 @@
                         <label for="last-name">Achternaam</label>
                         <input type="text" class="lastname" id="last-name" name="lastname" placeholder="Achternaam">
                     </div>
-                    <div class="email">
+                    <div class="fieldform">
                         <label for="e-mail">Email</label>
                         <input type="email" class="email" id="e-mail" name="email" placeholder="Email" required>
                     </div>
@@ -96,6 +96,27 @@
 
                         <label for="date">Geboortedatum</label>
                         <input type="date" id="date" name="birthday" class="date" required>
+                    </div>
+                    <div class="fieldform">
+                        <label for="topic">Onderwerp</label>
+                        <select name="topic" id="topic" class="topic" required>
+                            <option value="">Kies een onderwerp van het bericht...</option>
+                            <option value="">Ik heb een tip</option>
+                            <option value="">Ik heb een top</option>
+                            <option value="">Ik wil graag op een date</option>
+                            <option value="">Ik wil super graag dat je bij me komt werken</option>
+                        </select>
+                    </div>
+                    <div class="formmessage">
+                        <label for="message">Bericht</label>
+                        <input type="text" id="message" name="message" class="message" placeholder="Type hier uw bericht" required>
+                    </div>
+                    <div class="formselect">
+                        <p>Inschrijven voor nieuwsbrief?</p>
+                        <label for="yes">Ja</label>
+                        <input type="radio" id="yes" name="news" value="yes" required>
+                        <label for="no">Nee</label>
+                        <input type="radio" id="no" name="news" value="no" >
                     </div>
 
                 </form>
