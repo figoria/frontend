@@ -57,7 +57,7 @@ h2{
 
 button{
     height: 5vh;
-    width: 5vw;
+    min-width: 10vw;
     background-color: #171717;
     color:aliceblue;
     border-radius: 10px;
@@ -122,7 +122,8 @@ a.button-default {
     border-radius: 5px;
     border: 3px solid #171717;
     background-color: #171717;
-    position:relative;
+    position:static;
+    margin-top: 40vh;
 }
 
 a.button-default:hover {
@@ -133,8 +134,10 @@ a.button-default:hover {
 .contact {
     background-color: #d1ccc0;
     width: 100vw;
-    min-height: 55vh;
+    min-height: 60vh;
     text-align: left;
+    border-top: 1px solid #171717;
+    margin-top: 3vh;
 }
 
 form{
@@ -191,7 +194,7 @@ select{
 
 
 .buttonform{
-    width: 10vw;
+    min-width: 13vw;
     color: #171717;
     background-color:#d1ccc0 ;
     margin-left:14vw;
@@ -220,6 +223,7 @@ footer{
     min-height: 30vh;
     width: 100vw;
     gap: 20vw;
+    font-family: sans-serif;
 }
 
 footer img{
