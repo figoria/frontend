@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #DBD6CB;
+    color:#171717;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:auto;
+}
+
+#center-container {
+    max-width: 1000px;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+header{
+    width: 100vw;
+    min-height: 80vh;
+    background-image: url("../css/images/programmeren.jpg");
+    background-size: cover;
+    background-position: 50% 70%;
+    text-align: center;
+}
+
+.info-container article img {
+    height:30vh;
+    border: 2px solid #171717;
+    border-radius: 1vw;
+    object-fit: cover;
+}
+
+footer{
+    margin-top: 4vh;
+}
