@@ -167,6 +167,10 @@ input{
     margin-top: 1vh;
 }
 
+.formfield label{
+    display: none;
+}
+
 .name{
     width: 15.5vw;
 }
@@ -254,4 +258,42 @@ nav{
     height: 10vh;
     flex-direction: column;
 }
+
+.info-container{
+    flex-direction: column;
+}
+
+.contact{
+    min-height: 77vh;
+}
+
+.formfield{
+    display: flex;
+}
+
+.formfield label{
+    display: flex;
+}
+
+.name{
+    width: 40vw;
+}
+
+.third-row{
+    width: 40vw;
+}
+
+.buttonform{
+    margin: auto;
+}
+
+footer{
+    flex-direction: column;
+}
+
+footer img{
+    min-width: 10vw;
+    min-height: 4vh;
+}
+
 }
