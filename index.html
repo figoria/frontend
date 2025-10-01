@@ -4,34 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
-    <body>
+<body>
 
-        <nav>
-            <a href="index.html"> Home</a>
-            <a href="#contact">contact</a>
-        </nav>
-        <header>
-            <h1>Portfolio</h1>
-            <h2>Sam Bijkerk</h2>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
 
-            <button onclick="document.location='#overmij'"> over mij</button>
-            <button class= "button2"onclick="document.location='subpaginas/pagina1.html'"> odrachten</button>
+    <header>
+        <div class="header-container">
+            <div class="header-text">
+                <h1>Sam</h1>
+                <h1>Bijkerk</h1>
+                <h2>Portfolio</h2>
+                <h3>Creative developer</h3>
+            </div>
+            <div class="header-image">
+                <!-- Placeholder cirkel -->
+                <div class="circle"></div>
+            </div>
+        </div>
+    </header>
 
-        </header>
-        <div id="center-container">
-
+    <div id="center-container">
         <main>
             <section>
-                <h2 id="overmij">Wie is Sam?</h2>
+                <h2 id="overmij" class="overmij">Wie is Sam?</h2>
                 <div class="info-container">
 
                     <article>
                         <div class="info-content">
                             <img src="./css/images/fotoSam.JPG" alt="Een foto van Sam">
-
-
                             <h3>Over mij</h3>
                             <p>Ik ben Sam Bijkerk. Ik ben 18 jaar oud en zit op dit
                                 moment in het tweede jaar van het HBO. Ik doe de opleiding
@@ -43,98 +48,30 @@
 
                     <article>
                         <div class="info-content">
-                            <img src="./css/images/schaken.jpg" alt="Sam die een schaak move aan het bedenken is">
-
-                            <h3>Vrije tijd</h3>
-                            <p>
-                                Mijn hobby's zijn:
-                                <ul>
-                                    <li>Sportschool</li>
-                                    <li>Gamen</li>
-                                    <li>Schaken</li>
-                                </ul>
-                                Ik ga vier keer per week naar de sportschool en ik heb hier
-                                ook de ambitie in om powerlift wedstrijden te gaan doen.
-                                De spellen die ik het meest speel zijn FIFA 23 en Minecraft.
-                                Ook vind ik het leuk om met vrienden af te spreken en dan een 
-                                terrasje te pakken.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article>
-                        <div class="info-content">
                             <img src="./css/images/programmeren.jpg" alt="Computerscherm met codes">
-
-                            <h3>opdrachten</h3>
+                            <h3>Opdrachten</h3>
                             <p>Ik heb voor mijn opleiding al een paar opdrachten gekregen. De meeste moest ik 
                                 samen in een groepje doen, maar er was ook een opdracht die ik alleen moest doen.
                             </p>
                         </div>
-                        <a href="./subpaginas/pagina1.html" class="button-default">opdrachten</a>
+                        <a href="./subpaginas/pagina1.html" class="button-default">Opdrachten</a>
                     </article>
 
                 </div>
             </section>
-        </div>
-            <section class="contact">
-                <form action="./subpaginas/pagina2.html" id="contact">
-                    <h2>Contact</h2>
-                    <div class="formfield">
-                        <label for="first-name">Voornaam</label>
-                        <input type="text" class="name" id="first-name" name="name" placeholder="Voornaam" required>
-                        
-                        <label for="last-name">Achternaam</label>
-                        <input type="text" class="name" id="last-name" name="lastname" placeholder="Achternaam" required>
-                    </div>
-                    <div class="fieldform">
-                        <label for="e-mail">Email</label>
-                        <input type="email" class="email" id="e-mail" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="formfield">
-                        <label for="city">Woonplaats</label>
-                        <input type="text" class="city" id="city" name="city" placeholder="Woonplaats" required>
-
-                        <label for="date">Geboortedatum</label>
-                        <input type="date" id="date" name="birthday" class="date" required>
-                    </div>
-                    <div class="fieldform">
-                        <label for="topic">Onderwerp</label>
-                        <select name="topic" id="topic" class="topic" required>
-                            <option value="">Kies een onderwerp van het bericht...</option>
-                            <option value="">Ik heb een tip</option>
-                            <option value="">Ik heb een top</option>
-                            <option value="">Ik wil graag op een date</option>
-                            <option value="">Ik wil super graag dat je bij me komt werken</option>
-                        </select>
-                    </div>
-                    <div class="formmessage">
-                        <label for="message">Bericht</label>
-                        <input type="text" id="message" name="message" class="message" placeholder="Type hier uw bericht" required>
-                    </div>
-                    <div class="formselect">
-                        <p>Inschrijven voor nieuwsbrief?</p>
-                        <input type="radio" id="yes" name="news" value="yes" class="pick" required>
-                        <label for="yes">Ja</label>
-                        <input type="radio" id="no" name="news" value="no" class="pick">
-                        <label for="no">Nee</label>
-                    </div>
-                    <div class="formselect">
-                        <input type="checkbox" id="condition" name="condition" value="condition" class="pick" required>
-                        <label for="condition">Ik ga akkoord met de algemene voorwaarden* </label>
-                    </div>
-
-                    <button type="submit" class="buttonform">verstuur e-mail</button>
-
-                </form>
-            </section>
         </main>
-        <footer>
-            <img src="./css/images/instagram.png" alt="logo instagram">
-            <img src="./css/images/linkedin.png" alt="logo linkedin">
-            <img src="./css/images/tiktok.png" alt="logo tiktok">
-            <img src="./css/images/mail.png" alt="logo gmail">
+    </div>
 
-        </footer>
-    </body>
+  <footer>
+    <div class="footer-left">
+        <img src="./css/images/mail.png" alt="logo gmail">
+        <a href="mailto:sambijkerk@gmail.com">sambijkerk@gmail.com</a>
+    </div>
+    <div class="footer-right">
+        <img src="./css/images/instagram.png" alt="logo instagram">
+        <img src="./css/images/linkedin.png" alt="logo linkedin">
+    </div>
+</footer>
+
+</body>
 </html>
