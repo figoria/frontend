@@ -7,6 +7,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
+<script type="module">
+    import { Application } from 'https://cdn.jsdelivr.net/npm/@splinetool/runtime@0.9.288/build/runtime.js';
+
+    const canvas = document.getElementById('canvas3d');
+    const app = new Application(canvas);
+    app.load('https://prod.spline.design/3Zc0frSLq3CPPUwG/scene.splinecode');
+</script>
 <body>
 
     <nav>
@@ -23,6 +30,8 @@
             </div>
             <div class="header-image">
                 <!-- Placeholder cirkel -->
+                 <canvas id="canvas3d" style="width: 400px; height: 400px;"></canvas>
+
                 <div class="circle"></div>
             </div>
         </div>
@@ -54,63 +63,12 @@
                                 samen in een groepje doen, maar er was ook een opdracht die ik alleen moest doen.
                             </p>
                         </div>
-                        <a href="./subpaginas/pagina1.html" class="button-default">Opdrachten</a>
+                        <a href="./subpaginas/opdrachten.html" class="button-default">Opdrachten</a>
                     </article>
 
                 </div>
             </section>
         </div>
-            <section class="contact">
-                <form action="./subpaginas/pagina2.html" id="contact">
-                    <h2>Contact</h2>
-                    <div class="formfield">
-                        <label for="first-name">Voornaam</label>
-                        <input type="text" class="name" id="first-name" name="name" placeholder="Voornaam" required>
-                        
-                        <label for="last-name">Achternaam</label>
-                        <input type="text" class="name" id="last-name" name="lastname" placeholder="Achternaam" required>
-                    </div>
-                    <div class="fieldform">
-                        <label for="e-mail">Email</label>
-                        <input type="email" class="email" id="e-mail" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="formfield">
-                        <label for="city">Woonplaats</label>
-                        <input type="text" class="city" id="city" name="city" placeholder="Woonplaats" required>
-
-                        <label for="date">Geboortedatum</label>
-                        <input type="date" id="date" name="birthday" class="date" required>
-                    </div>
-                    <div class="fieldform">
-                        <label for="topic">Onderwerp</label>
-                        <select name="topic" id="topic" class="topic" required>
-                            <option value="">Kies een onderwerp van het bericht...</option>
-                            <option value="">Ik heb een tip</option>
-                            <option value="">Ik heb een top</option>
-                            <option value="">Ik wil graag op een date</option>
-                            <option value="">Ik wil super graag dat je bij me komt werken</option>
-                        </select>
-                    </div>
-                    <div class="formmessage">
-                        <label for="message">Bericht</label>
-                        <input type="text" id="message" name="message" class="message" placeholder="Type hier uw bericht" required>
-                    </div>
-                    <div class="formselect">
-                        <p>Inschrijven voor nieuwsbrief?</p>
-                        <input type="radio" id="yes" name="news" value="yes" class="pick" required>
-                        <label for="yes">Ja</label>
-                        <input type="radio" id="no" name="news" value="no" class="pick">
-                        <label for="no">Nee</label>
-                    </div>
-                    <div class="formselect">
-                        <input type="checkbox" id="condition" name="condition" value="condition" class="pick" required>
-                        <label for="condition">Ik ga akkoord met de algemene voorwaarden* </label>
-                    </div>
-
-                    <button type="submit" class="buttonform">verstuur e-mail</button>
-
-                </form>
-            </section>
         </main>
     </div>
 

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina in onderhoud</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+   <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #29282C;
+            color: #DBD6CB;
+            font-family: 'Inter', sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        a {
+            padding: 10px 20px;
+            background-color: #DBD6CB;
+            color: #29282C;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        a:hover {
+            background-color: #FFFFFF;
+        }
+    </style>
+  
+</head>
+<body>
+    <h1>Pagina in onderhoud 🚧</h1>
+      <model-viewer src="../css/3d/worker.glb" 
+                  alt="3D model" 
+                  auto-rotate 
+                  rotation-per-second="180deg"
+                  style="width: 400px; height: 400px;">
+    </model-viewer>
+    <p>Deze pagina is nog in aanbouw. Kom later terug om het resultaat te bekijken.</p>
+    <a href="../index.html">Terug naar Home</a>
+    
+</body>
+</html>
