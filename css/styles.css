@@ -79,11 +79,16 @@ header {
 }
 
 .circle {
-    width: 200px;                     /* grotere cirkel */
-    height: 200px;
+    width: 300px;  /* pas aan naar gewenste grootte */
+    height: 300px;
     border-radius: 50%;
-    background-color: #DBD6CB;        /* placeholder kleur */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd; /* optioneel, tijdelijke achtergrondkleur */
 }
+
 
 
 /* --- Main Section --- */

@@ -5,15 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <title>Portfolio</title>
 </head>
-<script type="module">
-    import { Application } from 'https://cdn.jsdelivr.net/npm/@splinetool/runtime@0.9.288/build/runtime.js';
 
-    const canvas = document.getElementById('canvas3d');
-    const app = new Application(canvas);
-    app.load('https://prod.spline.design/3Zc0frSLq3CPPUwG/scene.splinecode');
-</script>
 <body>
 
     <nav>
@@ -28,12 +23,24 @@
                 <h2>Portfolio</h2>
                 <h3>Creative developer</h3>
             </div>
-            <div class="header-image">
-                <!-- Placeholder cirkel -->
-                 <canvas id="canvas3d" style="width: 400px; height: 400px;"></canvas>
+           <div class="header-image">
+    <!-- Cirkel met 3D-model -->
+    <div class="circle">
+        <model-viewer id="sam-model"
+              src="./css/3d/3dscan.glb" 
+              alt="3D scan Sam"
+              camera-controls
+              disable-pan
+              disable-zoom
+              camera-orbit="0deg 80deg 2.5m"
+              min-camera-orbit="-20deg 70deg 2.5m"
+              max-camera-orbit="20deg 90deg 2.5m"
+              style="width: 400px; height: 400px;"
+              interaction-prompt="none">
+</model-viewer>
+    </div>
+</div>
 
-                <div class="circle"></div>
-            </div>
         </div>
     </header>
 
@@ -63,7 +70,7 @@
                                 samen in een groepje doen, maar er was ook een opdracht die ik alleen moest doen.
                             </p>
                         </div>
-                        <a href="./subpaginas/opdrachten.html" class="button-default">Opdrachten</a>
+                        <a href="./subpaginas/onderhoud.html" class="button-default">Opdrachten</a>
                     </article>
 
                 </div>
@@ -84,4 +91,17 @@
 </footer>
 
 </body>
+
+<script>
+  const modelViewer = document.getElementById('sam-model');
+
+  // Reset naar standaardpositie wanneer gebruiker loslaat
+  modelViewer.addEventListener('mouseup', () => {
+    modelViewer.cameraOrbit = "0deg 80deg 2.5m";
+  });
+  modelViewer.addEventListener('touchend', () => {
+    modelViewer.cameraOrbit = "0deg 80deg 2.5m";
+  });
+</script>
+
 </html>
